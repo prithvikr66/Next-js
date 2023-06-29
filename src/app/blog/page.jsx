@@ -5,7 +5,8 @@ import Image from 'next/image'
 
 
 async function getData(){
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+  const res = await fetch("http://localhost:3000/api/posts")
+  // console.log(res)
 
   if(!res.ok)
   throw new Error("Failed to Fetch Data")
